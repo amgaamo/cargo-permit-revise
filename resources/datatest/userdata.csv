@@ -1,0 +1,14 @@
+datatest,company,group,username,firstname,lastname,phone,email
+loginuserdata,Robot xAdmx Company Limited,BOT COMPANY1 ADMIN,lgbot,Robotlogin,Autobot,021190,logbot_
+changepwduser,Robot xAdmx Company Limited,BOT COMPANY1 ADMIN,pwdbot,Robot,Changepwd,021110,pwdbot_
+firstloginuser,Robot xAdmx Company Limited,BOT COMPANY1 ADMIN,fstbot,Robotfirst,Loginpwd,021910,fstbot_
+adduserdata,Robot xAdmx Company Limited,BOT COMPANY1 ADMIN,abot1,Robotfirst,Autobotlast,021190011,rdx1
+addofficeruser,Netbay,ROBOTX SUPER01,sppbot,Support,Autobotsupport,011190013,sppbot
+edituser1,Robot xAdmx Company Limited,BOT COMPANY1 USER,,Clouduser,Autobot,023345678,cldbot
+edituser2,Testbot xDefaultx Company Limited,Bot Customer Tracking,,Customer,Robot,021120099,edtbot
+changestatus,Robot xAdmx Company Limited,Bot Customer Tracking,chxs,Supawadee,Thongchai,021101200,chxs
+lockuser,Robot xAdmx Company Limited,Bot Customer Tracking,lockx,Supawadee,Lockuser,021101200,lockx
+resetpwd,Robot xAdmx Company Limited,Bot Customer Tracking,restx,Supawadeex,Resetpassword,021101200,restx
+searchdata1,Robot xAdmx Company Limited,Bot Customer Tracking,botsrc1,ณรงค์,ชาญอิสรภาพ,021102200,schr1
+searchdata2,Robot xAdmx Company Limited,Bot Customer Tracking,botsrc2,David,Kreak,0199001901,schr2
+searchdata3,Robot xAdmx Company Limited,Bot Customer Tracking,botsrc3,Papawadeen,Thanawattana,0299220192,schr3

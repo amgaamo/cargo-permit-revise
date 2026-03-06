@@ -1,0 +1,325 @@
+{
+  "companydata": [
+    {
+      "id":"0",
+      "typeofdata":"companysuperadmin",
+      "companyname": "Netbay",
+      "taxid": "0107557000101",
+      "email": "robotadmin@yopmail.com"
+    },
+    {
+      "id":"1",
+      "typedata":"companydefaultforadmin",
+      "registertype":"1",
+      "companytype":"3",
+      "companyname": "Robot default01 Company Limited",
+      "taxid": "0110890001008",
+      "branch": "00000",
+      "email": "robotdefault01com@botmail.com",
+      "limituser": "-1",
+      "limitlogin": "-1",
+      "limitrepeatpwd": "-1",
+      "limitexpired": "-1",
+      "limitsession": "60",
+      "sessionexpired": "60"
+    },
+    {
+      "id":"2",
+      "typedata":"companyforexceptioncase",
+      "registertype":"1",
+      "companytype":"3",
+      "companyname": "Robot Exctestx Company Limited",
+      "taxid": "0118890001009",
+      "branch": "00000",
+      "email": "robotexception01@botmail.com",
+      "limituser": "-1",
+      "limitlogin": "2",
+      "limitrepeatpwd": "3",
+      "limitexpired": "-1",
+      "limitsession": "60",
+      "sessionexpired": "60"
+    },
+    {
+      "id":"3",
+      "typedata":"companyforothercase",
+      "registertype":"1",
+      "companytype":"3",
+      "companyname": "Robot Defaultoth01 Company Limited",
+      "taxid": "0179890001009",
+      "branch": "00000",
+      "email": "robotdefaultoth01@botmail.com",
+      "limituser": "-1",
+      "limitlogin": "-1",
+      "limitrepeatpwd": "-1",
+      "limitexpired": "-1",
+      "limitsession": "60",
+      "sessionexpired": "60"
+    },
+    {
+      "id":"4",
+      "typedata":"companyforrolecases",
+      "registertype":"1",
+      "companytype":"3",
+      "companyname": "Robot Roletestx01 Company Limited",
+      "taxid": "0161890001009",
+      "branch": "00000",
+      "email": "robotroletestx@botmail.com",
+      "limituser": "-1",
+      "limitlogin": "-1",
+      "limitrepeatpwd": "-1",
+      "limitexpired": "-1",
+      "limitsession": "60",
+      "sessionexpired": "60"
+    },
+    {
+      "id":"5",
+      "typedata":"companyforpaging",
+      "registertype":"1",
+      "companytype":"3",
+      "companyname": "XBOTPAGING NUMXX Company Limited",
+      "taxid": "010088XX15990",
+      "branch": "00000",
+      "email": "botxpaging_XX@mail.com",
+      "limituser": "-1",
+      "limitlogin": "-1",
+      "limitrepeatpwd": "-1",
+      "limitexpired": "-1",
+      "limitsession": "60",
+      "sessionexpired": "60"
+    }
+  ],
+  "groupdata": [
+    {
+      "id":"0",
+      "typedata": "defaultgroup_for_SUPER",
+      "company": "Netbay",
+      "grouptype": "superadmin",
+      "groupname": "ROBOTX SUPER01",
+      "limituser": "-1"
+    },
+    {
+      "id":"1",
+      "typedata": "defaultgroup_for_COM1",
+      "company": "Robot xAdmx Company Limited",
+      "grouptype": "custadmin",
+      "groupname": "BOT COMPANY1 ADMIN",
+      "limituser": "-1"
+    },
+    {
+      "id":"2",
+      "typedata": "defaultgroup_for_COM1",
+      "company": "Robot xAdmx Company Limited",
+      "grouptype": "custadmin",
+      "groupname": "BOT COMPANY1 USER",
+      "limituser": "-1"
+    },
+    {
+      "id":"3",
+      "typedata": "defaultgroup_for_COM2",
+      "company": "Testbot xDefaultx Company Limited",
+      "grouptype": "custadmin",
+      "groupname": "BOT COMPANY2 ADMIN",
+      "limituser": "-1"
+    },
+    {
+      "id":"4",
+      "typedata": "group_for_paging_func",
+      "company": "Testbot xDefaultx Company Limited",
+      "grouptype": "custadmin",
+      "groupname": "XBOTPAGINGX XX ADMIN",
+      "limituser": "-1"
+    }
+  ],
+  "roledata": [
+    {
+      "id":"0",
+      "typedata": "defaultrole",
+      "roletype": "admin",
+      "rolename": "ROBOTX ADMIN"
+    },
+    {
+      "id":"1",
+      "typedata": "defaultrole",
+      "roletype": "admin",
+      "rolename": "ABOTXX ADMIN"
+    },
+    {
+      "id":"2",
+      "typedata": "defaultrole",
+      "roletype": "support",
+      "rolename": "ABOTXX SUPPORT"
+    },
+    {
+      "id":"3",
+      "typedata": "defaultrole",
+      "roletype": "customer",
+      "rolename": "ABOTXX CUSTOMER"
+    },
+    {
+      "id":"4",
+      "typedata": "roleforsuper",
+      "roletype": "superadmin",
+      "rolename": "ROBOT DEMOXSUPER"
+    },
+    {
+      "id":"5",
+      "typedata": "roleforcustadmin",
+      "roletype": "customer admin",
+      "rolename": "ROBOT DEMOXCUSTADMIN"
+    }
+  ],
+  "userdata": [
+    {
+      "id":"0",
+      "typedata": "defaultrobotadmin",
+      "companyuser": "Netbay",
+      "groupuser": "SYSTEM ADMIN",
+      "username": "botadmin01",
+      "firstname": "Robot01",
+      "lastname": "Admin01",
+      "phone": "020000001",
+      "email": "robotadmin@mail.com"
+    },
+    {
+      "id":"1",
+      "typedata": "defaultrobotadmin",
+      "companyuser": "Netbay",
+      "groupuser": "SYSTEM ADMIN",
+      "username": "botadmin02",
+      "firstname": "Robot",
+      "lastname": "Admin02",
+      "phone": "020000002",
+      "email": "robotadmin2@mail.com"
+    },
+    {
+      "id":"2",
+      "typedata": "defaultrobotapi",
+      "companyuser": "Netbay",
+      "groupuser": "SYSTEM ADMIN",
+      "username": "robotapi",
+      "firstname": "Robotapi",
+      "lastname": "Callservice",
+      "phone": "020000001",
+      "email": "robotapi@mail.com"
+    },
+    {
+      "id":"3",
+      "typedata": "defaultrobotcustomer",
+      "companyuser": "Robot default01 Company Limited",
+      "groupuser": "BOT COMPANY1 ADMIN",
+      "username": "admincust01",
+      "firstname": "Robottest",
+      "lastname": "customer01",
+      "phone": "020000001",
+      "email": "xcustadm01@mail.com"
+    },
+    {
+      "id":"4",
+      "typedata": "defaultrobotcustomer",
+      "companyuser": "Robot Defaultoth01 Company Limited",
+      "groupuser": "BOT COMPANY2 ADMIN",
+      "username": "custadm02",
+      "firstname": "Robottest2",
+      "lastname": "customer02",
+      "phone": "020000002",
+      "email": "custxadm02@mail.com"
+    },
+    {
+      "id":"5",
+      "typedata": "defaultuserpaging",
+      "companyuser": "Robot Defaultoth01 Company Limited",
+      "groupuser": "BOT COMPANY2 ADMIN",
+      "username": "xbotpagingXX",
+      "firstname": "Robottest2",
+      "lastname": "customer02",
+      "phone": "020000002",
+      "email": "botxpagingXX01@mail.com"
+    }
+  ],
+  "menudata": [
+    {
+      "id":"0",
+      "typedata": "defaultmainmenu",
+      "menuname": "XRobot Management",
+      "urlmenu": "",
+      "iconmenu": "",
+      "ordermenu": "10",
+      "typeofmenu": "mainmenu",
+      "mainmenu": ""
+    },
+    {
+      "id":"1",
+      "typedata": "defaultsubmenu",
+      "menuname": "Botx Manage",
+      "urlmenu": "/mainmenu/botx",
+      "iconmenu": "",
+      "ordermenu": "11",
+      "typeofmenu": "submenu",
+      "mainmenu": "XRobot Management"
+    },
+    {
+      "id":"2",
+      "typedata": "defaultsubmenu",
+      "menuname": "Autox Manage",
+      "urlmenu": "/mainmenu/autox",
+      "iconmenu": "",
+      "ordermenu": "12",
+      "typeofmenu": "submenu",
+      "mainmenu": "XRobot Management"
+    },
+    {
+      "id":"3",
+      "typedata": "defaultsubmenu",
+      "menuname": "Abotx Manage",
+      "urlmenu": "/mainmenu/abotx",
+      "iconmenu": "",
+      "ordermenu": "12",
+      "typeofmenu": "submenu",
+      "mainmenu": "XRobot Management"
+    },
+    {
+      "id":"4",
+      "typedata": "defaultsubmenu",
+      "menuname": "Robotxx Manage",
+      "urlmenu": "/mainmenu/robotxx",
+      "iconmenu": "",
+      "ordermenu": "13",
+      "typeofmenu": "submenu",
+      "mainmenu": "XRobot Management"
+    }
+  ],
+  "permdata": [
+    {
+      "id":"0",
+      "typedata": "addpermission",
+      "permissioncode": "AUTOX_ADD"
+    },
+    {
+      "id":"1",
+      "typedata": "editpermission",
+      "permissioncode": "AUTOX_EDIT"
+    },
+    {
+      "id":"2",
+      "typedata": "delpermission",
+      "permissioncode": "AUTOX_DEL"
+    }
+  ],
+  "ctypedata": [
+    {
+      "id":"0",
+      "ctype": "1",
+      "ctypename": "DFAULT TYPESTD"
+    },
+    {
+      "id":"1",
+      "ctype": "1",
+      "ctypename": "DFAULT NEWMGT"
+    },
+    {
+      "id":"2",
+      "ctype": "1",
+      "ctypename": "DFAULT NEWTYPEX"
+    }
+  ]
+}

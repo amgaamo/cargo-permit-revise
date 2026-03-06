@@ -1,0 +1,15 @@
+datatest,menuname,menuurl,menuicon,menuorder,mainmenuname,typeofmenu
+mainmenutest,Bottestx Management,,,15,,mainmenu
+mainmenutest2,Autobotx Change,,,17,,mainmenu
+addmain,Mainbotx Management,/mainxxt,iconf-01,10,,mainmenu
+addsub,Subbotx Testx,/mainmenu/subautobot,icon-1,16,TXXBOTXXT Management,submenu
+editmain,Mainrobotxe Management,/maintest,iconmain-1,10,mainmenu
+editsub,Subrobotxte Testx,/mainmenu/subautobotxx,icon-2,16,TXXBOTXXT Management,submenu
+delmain,Qrobotx Main,,,10,,mainmenu
+delmain2,Qautobotx Main,,,11,,mainmenu
+delsub,Qrobotxxt Subtest1,/mainmenu/qxsubtest,,11,QQAutobot Main,submenu
+delsub2,Qrobotxtx Subtest2,/mainmenu/qxsubtes2,,11,QQAutobot Main,submenu
+datasearch_0,TXMAINBOT Management,,,10,,mainmenu
+datasearch_1,NZXBot Automenu,/mainmenu/nzxbotauto,,11,TXMAINBOT Management,submenu
+datasearch_2,Robotxix Manage,/mainmenu/roboxxix,,12,TXMAINBOT Management,submenu
+datasearch_3,CQYbot Menu,/mainmenu/cqybot,,13,TXMAINBOT Management,submenu

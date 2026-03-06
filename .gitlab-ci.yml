@@ -1,0 +1,41 @@
+image: docker:24.0.5
+services:
+  - docker:24.0.5-dind
+
+variables:
+  GIT_SSL_NO_VERIFY: "true"
+  SHORT_SHA: $CI_BUILD_REF
+  DOCKER_USER_NAME: $USERNAME_GIT_LAB
+  DOCKER_PASSWORD: $PASSWORD_GIT_LAB
+  BRANCH_NAME: $CI_COMMIT_REF_NAME
+  PROJECT_NAME: "usermanagement-newstd"
+  CONTAINER_REGISTRY: "mobydick.netbay.co.th/qa/usermanagement-std/usermanagement-newstd"
+
+stages:
+  - test
+  - package
+
+robot-test:
+  tags:
+    - ext-qarunner
+  only:
+    - master
+  stage: test
+  script:
+    - docker login --username=$REGISTRY_USERNAME --password=$REGISTRY_PASSWORD mobydick.netbay.co.th
+    - docker build -t $PROJECT_NAME .
+    - docker run --rm --env-file env.list $PROJECT_NAME robot --listener listener_email/EmailListener.py -V listener_email/config.py -d output testsuite
+
+api-package:
+  tags:
+    - ext-qarunner
+  only:
+    - master
+  stage: package
+  script:
+    - docker login --username=$REGISTRY_USERNAME --password=$REGISTRY_PASSWORD mobydick.netbay.co.th
+    - docker build -t $PROJECT_NAME .
+    - docker tag $PROJECT_NAME:latest $CONTAINER_REGISTRY:latest
+    - docker tag $PROJECT_NAME:latest $CONTAINER_REGISTRY:$SHORT_SHA
+    - docker push $CONTAINER_REGISTRY:latest
+    - docker push $CONTAINER_REGISTRY:$SHORT_SHA

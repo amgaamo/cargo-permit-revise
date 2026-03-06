@@ -1,0 +1,11 @@
+datatest,registerType,companyType,taxid,companyName,companyBranch,phone,email,contactname,contactlastname,contactemail,contactphone,limituser,limitlogin,limitrepeatpwd,limitexpired,limitsession,sessionexpired
+createnewcom1,legal,customer,01901,บริษัทบอททดสอบ,00000,02119900,cnlg1-,Auto,Robot,cnewlg1_,0819981111,99,10,20,360,30,60
+createnewcom2,legal,customer,01802,บริษัทโรบอท,00000,02119100,cnlg2-,Auto,Robot2,cnewlg2_,0812981111,99,10,20,360,30,60
+editcom1,,officer,,,00001,021123456,elg-,ชาญชัย,นาดี,elgl_,0833382299,20,-1,10,-1,60,90
+editcom2,,officer,,,00001,021003456,cde-,ชาญชัย,นาดี,cdefault_,0819982299,50,99,22,365,60,90
+data1,legal,netbay,0189999900770,Botx Company Limited,00000,021123456,cdef-101@robotmail.com,ชาญชัย,นาดี,cdefault_101@robotmail.com,0819982299,50,99,22,365,60,90
+data2,legal,officer,0189999900771,บริษัทดับเบิลเอ็กซ์บอท จำกัด,00000,021123456,cdef-102@robotmail.com,ชาญชัย,นาดี,cdefault_102@robotmail.com,0819982299,50,99,22,365,60,90
+data3,legal,customer,0189999900772,บริษัท เอ็กซ์เอ็กซ์ซีโร่ จำกัด,00000,021123456,cdef-103@robotmail.com,ชาญชัย,นาดี,cdefault_103@robotmail.com,0819982299,50,99,22,365,60,90
+data4,person,customer,0189999900773,บริษัททีเอ็กซ์ บอทออโต้,,021123456,cdef-104@robotmail.com,ชาญชัย,นาดี,cdefault_104@robotmail.com,0819982299,50,99,22,365,60,90
+data5,legal,netbay,0189999900774,TXTXBOT AUTO COMPANY,00000,021100991,cdef-105@robotmail.com,ชาญชัย,นาดี,cdefault_105@robotmail.com,0819982299,50,99,22,365,60,90
+createappvcom,legal,customer,01118,บริษัททดสอบบอท,00000,021100912,appvcom1-,Autoappv,Robotappv,appvcomct_,0890981111,99,10,20,360,30,60

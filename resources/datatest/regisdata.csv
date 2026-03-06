@@ -1,0 +1,12 @@
+datatest,regisType,companyType,companyName,taxid,companyBranch,phone,email,contactname,contactlastname,contactemail,contactphone,firstname,lastname,userphone,useremail,username
+reglegal,legal,officer,บริษัทบอทออโต้รีจิส,03093,00000,02119900,regcom_,เดวิด,นาทีวิท,rgcont_,0849981131,สุรชัย,แสงทอง,0178879980,reglegal2_,robotd
+regperson,person,person,โชคดี แสนดีบอท,03094,,02119901,regpsn_,เดวิดบอท,มาร์โควิท,rgperson_,0119981311,เดฟ,อาลี,0118879920,regperson2_,botps
+regmlegal,legal,officer,บริษัทออโต้รีจิส,04093,00001,02129900,regmcom_,นาที,มาดี,rgmcont_,0819981131,สุรชาติ,แสงไทย,0198879980,regmlegal_,mbotd
+regmperson,person,person,แสนดี โชคดีบอท,04094,,02110901,regmpsn_,เดวิด,มาร์โควิท,rgmperson_,0919981311,เดฟที,อาลี,0108879920,regmperson_,mbotps
+apprvlegal,legal,officer,Regappv,03095,00001,02129900,appvcom_,Bottest,Marzipkv,appvcont_,0829981111,Davidbot,Nabot,0178879980,appvlg_,lbotapv
+apprvperson,person,person,ณรงค์ ใจดี,03096,,02111901,appvpsn_,บอทเทส,วินวิน,appvperson_,0119911311,เดฟเทส,อาลีบอท,0218879920,appvps_,pbotapv
+searchdata1,legal,officer,Sxbot,03096,00000,02129900,scr01_,Bottest,Marzipkv,appvcont_,0829981111,Davidbot,Nabot,0178879980,scrx01_,sbot1
+searchdata2,person,person,โรบอท,03097,,02111901,scr02_,บอทเทส,วินวิน,appvperson_,0119911311,เดฟเทส,อาลีบอท,0218879920,scrx02_,sbot2
+searchdata3,legal,officer,Sbotxx,03098,00002,02129900,scr03_,Bottest,Marzipkv,appvcont_,0829981111,Davidbot,Nabot,0178879980,scrx03_,sbot3
+searchdata4,person,person,บอทออโต้,03099,,02111901,scr04_,บอทเทส,วินวิน,appvperson_,0119911311,เดฟเทส,อาลีบอท,0218879920,scrx04_,sbot4
+searchdata5,legal,officer,Botsxx,03100,00001,02111901,scr05_,บอทเทส,วินวิน,appvperson_,0119911311,เดฟเทส,อาลีบอท,0218879920,scrx05_,sbot5

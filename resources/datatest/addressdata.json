@@ -1,0 +1,52 @@
+{
+  "addressdata": [
+    {
+      "addrid":"0",
+      "housenum":"334/3",
+      "moo": "19",
+      "building": "อาคารทดสอบ",
+      "soi": "รองเมือง 1",
+      "street": "ถนนพระราม 1",
+      "subdistrict": "รองเมือง",
+      "district": "ปทุมวัน",
+      "province": "กรุงเทพฯ",
+      "postcode": "10330"
+    },
+    {
+      "addrid":"1",
+      "housenum":"134/5-9",
+      "moo": "11",
+      "building": "อาคารกรีนวู้ด",
+      "soi": "ซอยพระลับ 1",
+      "street": "ถนนศรีจันทร์",
+      "subdistrict": "พระลับ",
+      "district": "เมืองขอนแก่น",
+      "province": "ขอนแก่น",
+      "postcode": "40000"
+    },
+    {
+      "addrid":"2",
+      "housenum":"776/5-9",
+      "moo": "3",
+      "building": "อาคารไทยร่วมใจ",
+      "soi": "ซอยฟากห้วย 12",
+      "street": "ถนนจันทร์",
+      "subdistrict": "ฟากห้วย",
+      "district": "อรัญประเทศ",
+      "province": "สระแก้ว",
+      "postcode": "27120"
+    },
+    {
+      "addrid":"3",
+      "housenum":"119/101",
+      "moo": "30",
+      "building": "Summit Building",
+      "soi": "ซอยฟากห้วย 12",
+      "street": "ถนนจันทร์",
+      "subdistrict": "บางขุนเทียน",
+      "district": "จอมทอง",
+      "province": "กรุงเทพฯ",
+      "postcode": "10150"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+datatest,companyname,groupname,limituser
+createnew,defaultcompany1,Robot Gauto,10
+createunlimitusr,defaultcompany1,Robot Unlimit,-1
+editgroup,defaultcompany2,,50
+data_1,defaultcompany1,Grouprobotx auto,10
+data_2,defaultcompany1,Bottxt Grouptest,10
+data_3,defaultcompany1,Robotxtx Groupauto,10
+data_4,defaultcompany3,Robotgx Group,10
+data_5,defaultcompany3,Zxtbot xAutogroupx,10
