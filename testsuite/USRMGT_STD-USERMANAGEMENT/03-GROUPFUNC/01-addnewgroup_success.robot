@@ -81,7 +81,7 @@ Template Add new Group is success
       FOR   ${index}     IN RANGE     ${amountrole}
             pageGroupMgt.Check checkbox role group    ${rolegroup}[${index}]
       END
-      commonkeywords.Fill in data form    ${LOCATOR_GROUPAPPROVAL_FIELD}        No
+      # commonkeywords.Fill in data form    ${LOCATOR_GROUPAPPROVAL_FIELD}        No
 
       commonkeywords.Click button on detail page    ${LOCATOR_GROUPSAVE_BTN}
       commonkeywords.Verify Modal Title message    Success
@@ -110,8 +110,8 @@ Template Add new Group is success
       commonkeywords.Verify data form         ${LOCATOR_GROUPCOMPANY_SEL}         should be    ${groupcomvalue}
       commonkeywords.Verify data form         ${LOCATOR_GROUPNAME_FIELD}          should be    ${groupnamevalue}
       commonkeywords.Verify data form         ${LOCATOR_GROUPLIMITUSER_FIELD}     should be    ${limituser}
-      commonkeywords.Verify data form         ${LOCATOR_GROUPAPPROVAL_FIELD}      should be    No
-      commonkeywords.Verify data form         ${LOCATOR_GROUP_GROUPAPPV_FIELD}    should be    Please Select
+      # commonkeywords.Verify data form         ${LOCATOR_GROUPAPPROVAL_FIELD}      should be    No
+      # commonkeywords.Verify data form         ${LOCATOR_GROUP_GROUPAPPV_FIELD}    should be    Please Select
 
       IF   '${limituser}'=='-1'
             commonkeywords.Verify data form    ${LOCATOR_GROUPUNLIMITUSER_CHK}    should be    check

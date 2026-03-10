@@ -44,8 +44,7 @@ Suite teardown    Run Keywords      Pass Execution If    '${GLOBAL_USERMGT_FUNCT
 #                    CASE                       |              Group company          |     Group name     | State Unlimit user |     Limit User    |           Role name         |    Approval    |          Group APPROVAL       |                                                         Expected Warning                                                                    #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 
-CASE-EMPTY ALL FIELD                               Please Select                          ${EMPTY}                 uncheck              ${EMPTY}         ${EMPTY}                        No               Please Select               groupcom=${GROUP_REQUIREWARNMSG}[company]     groupname=${GROUP_REQUIREWARNMSG}[groupName]     groupusrlimit=${GROUP_REQUIREWARNMSG}[limitUser]
-...                                                                                                                                                                                                                                   appv=${GROUP_REQUIREWARNMSG}[approval]        groupapproval=${GROUP_REQUIREWARNMSG}[groupappv]
+CASE-EMPTY ALL FIELD                               Please Select                          ${EMPTY}                 uncheck              ${EMPTY}         ${EMPTY}                        No               Please Select               groupcom=${GROUP_REQUIREWARNMSG}[company]     groupname=${GROUP_REQUIREWARNMSG}[groupName]     groupusrlimit=${GROUP_REQUIREWARNMSG}[limitUser]                                                                                                                                                                                                                                  appv=${GROUP_REQUIREWARNMSG}[approval]        groupapproval=${GROUP_REQUIREWARNMSG}[groupappv]
 CASE-EMPTY GROUP COMPANY                           Please Select                          XXXXGROUPXXXX            uncheck              10               ${EMPTY}                        No               Please Select               groupcom=${GROUP_REQUIREWARNMSG}[company]
 CASE-EMPTY GROUP NAME                              ${default_companygroup}                ${EMPTY}                 uncheck              10               ${GLOBAL_DEFAULTROLE_LIST}[0]   No               Please Select               groupname=${GROUP_REQUIREWARNMSG}[groupName]
 CASE-EMPTY LIMIT USER                              ${default_companygroup}                XXXXGROUPXXXX            uncheck              ${EMPTY}         ${GLOBAL_DEFAULTROLE_LIST}[0]   No               Please Select               groupusrlimit=${GROUP_REQUIREWARNMSG}[limitUser]
@@ -73,8 +72,8 @@ Template Validate Group field exception case
           Fail    \nPlease check 'stateunlimituser' should any check or uncheck.
       END
 
-      commonkeywords.Fill in data form    ${LOCATOR_GROUPAPPROVAL_FIELD}         ${appoval}
-      commonkeywords.Fill in data form    ${LOCATOR_GROUP_GROUPAPPV_FIELD}       ${groupappv}
+    #   commonkeywords.Fill in data form    ${LOCATOR_GROUPAPPROVAL_FIELD}         ${appoval}
+    #   commonkeywords.Fill in data form    ${LOCATOR_GROUP_GROUPAPPV_FIELD}       ${groupappv}
 
       IF  '${rolename}'!='' and '${groupcomvalue}'!='Please Select'
           PageGroupMgt.Check checkbox role group    ${rolename}

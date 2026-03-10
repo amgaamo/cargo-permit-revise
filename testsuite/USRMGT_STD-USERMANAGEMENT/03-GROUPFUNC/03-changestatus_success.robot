@@ -24,6 +24,8 @@ Test Setup        Run Keywords      commonkeywords.Generate Random Values    len
 ...               AND               Pass Execution If    '${GLOBAL_USERMGT_FUNCTEST}'=='False'             
 ...                                       \nNo Execute this function: GLOBAL_USERMGT_FUNCTEST is ${GLOBAL_USERMGT_FUNCTEST}.
 
+
+
 Test template     Template Change Status Group is success
 
 Suite teardown    Run Keywords      Pass Execution If    '${GLOBAL_USERMGT_FUNCTEST}'=='False'             
@@ -35,9 +37,9 @@ Suite teardown    Run Keywords      Pass Execution If    '${GLOBAL_USERMGT_FUNCT
 #--------------------------------------------------------------------------------------------------------------------------------------#
 #                 CASE                  |           Group Name      |     isActive Data    |     Confirm?     |     Expected Status    #
 #--------------------------------------------------------------------------------------------------------------------------------------#
-CASE1-Change status ACTIVE to INACTIVE          ${groupnew_name}        true                     Yes                 Inactive
-CASE2-Change status INACTIVE to ACTIVE          ${groupnew_name}        false                    Yes                 Active
-CASE3-Cancel to change status                   ${groupnew_name}        true                     No                  Active
+CASE1-Change status ACTIVE to INACTIVE          ${groupnew_name}        true                     Yes                 INACTIVE 
+CASE2-Change status INACTIVE to ACTIVE          ${groupnew_name}        false                    Yes                 ACTIVE
+CASE3-Cancel to change status                   ${groupnew_name}        true                     No                  ACTIVE
 
 *** Keywords ***
 Template Change Status Group is success
@@ -63,6 +65,8 @@ Template Change Status Group is success
       commonkeywords.Wait Loading progress
       commonkeywords.Click Hide Search Criteria
       pageGroupMgt.Verify Group Result Datatable    1    groupname      contains      ${groupnamevalue}
+
+    
 
       IF  '${isActive}'=='true'
             pageGroupMgt.Verify Group Result Datatable    1    status         should be     ${GROUPSTATUS}[active]

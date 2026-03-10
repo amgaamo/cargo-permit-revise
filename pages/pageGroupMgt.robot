@@ -41,12 +41,13 @@ ${GROUP_ROLENOTFOUND_WARNMSG}    Role not found
 ${GROUP_NORECORD_FOUND}         //*[@id="gmnl-items-list"]/tbody/tr/td
 
 #Group Data table
-&{1ROW_GROUP_ACTION}        edit=//*[@id="gmnl-items-edit-0"]      changeStatus=//*[@id="gmnl-change-status-btn"]
+&{1ROW_GROUP_ACTION}        edit=//*[@id="gmnl-items-edit-0"]      changeStatus=//*[@id="umnl-change-status-btn"]
+# ...    changeStatus=//*[@id="gmnl-change-status-btn"]
 ${GROUP_THEAD}             //*[@id="gmnl-items-list"]/thead
 ${ROW_GROUP_TBODY}         //*[@id="gmnl-items-list"]/tbody
 
 &{GROUPSEARCHBY}            groupname=Group Name      comname=Company Name
-&{GROUPSTATUS}              active=Active             inactive=Inactive
+&{GROUPSTATUS}              active=ACTIVE             inactive=INACTIVE
 
 *** Keywords ***
 Check checkbox role group
