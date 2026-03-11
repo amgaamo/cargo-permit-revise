@@ -37,7 +37,7 @@ Suite teardown    Run Keywords      Pass Execution If    '${GLOBAL_USERMGT_FUNCT
 *** Test Cases ***
 # EMPTY DATA #
 CASE-EMPTY ALL Mandatory Field
-...   Please Select     ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}
+...   ${EMPTY}     ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}    ${EMPTY}
 ...   expwarn_comtype=${COMPANY_REQUIREWARNMSG}[companyType]
 ...   expwarn_taxid=${COMPANY_REQUIREWARNMSG}[companyTax]
 ...   expwarn_comname=${COMPANY_REQUIREWARNMSG}[companyName]
@@ -56,7 +56,7 @@ CASE-EMPTY ALL Mandatory Field
 ...   expwarn_sessionexpired=${COMPANY_REQUIREWARNMSG}[sessionExpired]
 
 CASE-EMPTY Company Type
-...   Please Select     01001100101010    Test    00000    11/1    รองเมือง     10330      test@mail.com    1    1    1    1    1    1    ${EMPTY}    ${EMPTY}
+...   ${EMPTY}     01001100101010    Test    00000    11/1    รองเมือง     10330      test@mail.com    1    1    1    1    1    1    ${EMPTY}    ${EMPTY}
 ...   expwarn_comtype=${COMPANY_REQUIREWARNMSG}[companyType]
 
 CASE-EMPTY TaxID field

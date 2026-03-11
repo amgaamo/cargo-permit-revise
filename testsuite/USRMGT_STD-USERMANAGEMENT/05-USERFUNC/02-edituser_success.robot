@@ -115,10 +115,15 @@ Template Edit User Success
       commonkeywords.Wait Loading progress
       commonkeywords.Click Hide Search Criteria
       commonkeywords.Wait Loading progress
+      
+      ${expected_name_edit}=     utils.Mask Custom Data    ${firstname}_${lastname}
+      pageUserMgt.Verify User Result Datatable    1    name             contains      ${expected_name_edit}
+      pageUserMgt.Verify User Result Datatable    1    username         should be     ${username}
 
-      pageUserMgt.Verify User Result Datatable    1    name         contains        ${firstname}
-      pageUserMgt.Verify User Result Datatable    1    name         contains        ${lastname}
-      pageUserMgt.Verify User Result Datatable    1    username     should be       ${username}
+
+      # pageUserMgt.Verify User Result Datatable    1    name         contains        ${firstname}
+      # pageUserMgt.Verify User Result Datatable    1    name         contains        ${lastname}
+      # pageUserMgt.Verify User Result Datatable    1    username     should be       ${username}
 
       IF   '${companyname}'!=''
             pageUserMgt.Verify User Result Datatable    1    companyname    contains      ${companyname}
@@ -127,8 +132,10 @@ Template Edit User Success
             pageUserMgt.Verify User Result Datatable    1    group    should be      ${groupname}   ignore_case=true
       END
 
-      pageUserMgt.Verify User Result Datatable    1    email            should be     ${email}
-      pageUserMgt.Verify User Result Datatable    1    approve          should be     Y
+      ${expected_email_edit}=    utils.Mask Custom Data    ${email}
+      pageUserMgt.Verify User Result Datatable    1    email            should be     ${expected_email_edit}
+      #pageUserMgt.Verify User Result Datatable    1    email            should be     ${email}
+      #pageUserMgt.Verify User Result Datatable    1    approve          should be     Y --- ตอนนี้ไม่เจอ approve ใน datatable แล้ว
       pageUserMgt.Verify User Result Datatable    1    status           should be     ${USERSTATUS}[active]
 
       #verify use data info

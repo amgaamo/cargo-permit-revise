@@ -214,7 +214,7 @@ Request Service Update Company Status
       Set Local Variable   ${status_val}     ${resp_updatecompstatus.body.status}
 
       IF  '${status_val}'=='success'
-          Log To Console      \nUpdate Company status (${comname}):  ${status_val}
+          Log To Console      \nUpdate Company status (${comname}): ${status_val}
       ELSE
           Fail    \nUpdate Company status: ${status_val}, ${resp_updatecompstatus.body.message}
       END

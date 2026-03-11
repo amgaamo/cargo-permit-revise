@@ -9,6 +9,7 @@ Library       DateTime
 Library       JSONLibrary
 Library       RPA.Tables
 Library       RPA.JSON
+Library       ../utils.py
 
 Resource      config-properties.resource
 Resource      datasources.resource
@@ -85,13 +86,13 @@ ${LOCATOR_NOTIFY_WARN}                //div[@aria-label="Warning"]
 ${LOCATOR_NOTIFY_SUCCESS}             //div[@aria-label="Success"]
 ${LOCATOR_NOTIFY_MSG}                 //div[@role="alertdialog"]
 
-&{mainmenu}       configuration=//*[@title="Configuration"]
+&{mainmenu}       configuration=css=a[title="Configuration"]
 ...               registerMgt=//*[contains(@href, 'mainmenu/register/approve')]
 
 
-&{submenu}        usermgt=//a[contains(@title, 'User Management')]
-...               groupMgt=//a[contains(@title, 'Group Management')]
-...               companyMgt=//a[contains(@title, 'Company Management')]
+&{submenu}        usermgt=css=a[title="User Management"]
+...               groupMgt=css=a[title="Group Management"]
+...               companyMgt=css=a[title="Company Management"]
 ...               permMgt=//a[contains(@title, 'Permission Management')]
 ...               roleMgt=//a[contains(@title, 'Role Management')]
 ...               menuMgt=//a[contains(@title, 'Menu Management')]
