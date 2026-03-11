@@ -60,7 +60,7 @@ ${ROW_USER_TBODY}          //*[@id="umnl-items-list"]/tbody
 ...                        approve=//*[@id="umnl-approve-user-btn"]
 
 &{USERSEARCHBY}            companyname=Company Name      username=Username    email=Email    firstname=First Name    lastname=Last Name
-&{USERSTATUS}              active=Active      inactive=Inactive
+&{USERSTATUS}              active=ACTIVE      inactive=INACTIVE
 &{column_usermgt}          name=1   username=2   companyName=3    group=4   email=5    status=6   approve=7
 
 *** Keywords ***

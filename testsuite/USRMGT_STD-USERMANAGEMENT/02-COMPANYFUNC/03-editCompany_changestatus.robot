@@ -46,9 +46,9 @@ Suite teardown    Run Keywords      Pass Execution If    '${GLOBAL_USERMGT_FUNCT
 #-----------------------------------------------------------------------------------------------------#
 #                 CASE                  |   Company Name  |     Confirm?     |     Expected Status    #
 #-----------------------------------------------------------------------------------------------------#
-CASE1-Change status ACTIVE to INACTIVE    ${companyname}         Yes                 Inactive
-CASE2-Change status INACTIVE to ACTIVE    ${companyname}         Yes                 Active
-CASE3-Cancel to change status             ${companyname}         No                  Active
+CASE1-Change status ACTIVE to INACTIVE    ${companyname}         Yes                 INACTIVE
+CASE2-Change status INACTIVE to ACTIVE    ${companyname}         Yes                 ACTIVE
+CASE3-Cancel to change status             ${companyname}         No                  ACTIVE
 
 *** Keywords ***
 Set Company Type Value Data
@@ -76,7 +76,7 @@ Template Change Status Company is success
 
       pageCompanyMgt.Verify Company Result Datatable    1    companyname    contains    ${comname}
 
-      IF  '${expectedstatus}'=='Active' and '${is_confirm}'=='Yes'
+      IF  '${expectedstatus}'=='ACTIVE' and '${is_confirm}'=='Yes'
             commonkeywords.Click button on list page    ${1ROW_COMPANY_ACTION}[changeStatus]
             commonkeywords.Click Yes Button for confirm
             commonkeywords.Click OK Button
@@ -86,7 +86,7 @@ Template Change Status Company is success
             commonkeywords.Click button on list page            ${LOCATOR_SEARCHCOM_BTN}
             commonkeywords.Click Hide Search Criteria
             commonkeywords.Wait Loading progress
-            pageCompanyMgt.Verify Company Result Datatable    1    status    should be    Inactive
+            pageCompanyMgt.Verify Company Result Datatable    1    status    should be    INACTIVE
       END
 
       commonkeywords.Click button on list page       ${1ROW_COMPANY_ACTION}[changeStatus]
