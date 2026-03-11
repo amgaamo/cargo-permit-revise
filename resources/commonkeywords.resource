@@ -9,6 +9,7 @@ Library       DateTime
 Library       JSONLibrary
 Library       RPA.Tables
 Library       RPA.JSON
+Library       ../utils.py
 
 Resource      config-properties.resource
 Resource      datasources.resource

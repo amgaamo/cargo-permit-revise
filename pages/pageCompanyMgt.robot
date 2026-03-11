@@ -113,12 +113,12 @@ ${LOCATOR_LISTBOXSUBDISTRICT}      //*[@role="listbox"]/button[1]/div
 &{COMTYPE}           netbay=NETBAY     officer=OFFICER      customer=CUSTOMER    person=PERSONAL
 &{COMTYPE_ID}        netbay=1          officer=2            customer=3           person=4
 &{COMSEARCHBY}       comtype=Company Type      comname=Company Name
-&{COMSTATUS}         active=Active             inactive=Inactive
+&{COMSTATUS}         active=ACTIVE             inactive=INACTIVE
 
 ${COMPANY_NORECORD_FOUND}    //*[@id="cmnl-items-list"]/tbody/tr/td
 
 #Company Data table
-&{1ROW_COMPANY_ACTION}        edit=//*[@id="cmnl-items-edit-0"]      changeStatus=//*[@id="cmnl-change-status-btn"]
+&{1ROW_COMPANY_ACTION}        edit=//*[@id="cmnl-items-edit-0"]      changeStatus=//*[@id="umnl-change-status-btn"]
 
 ${COMPANY_THEAD}             //*[@id="cmnl-items-list"]/thead
 ${ROW_COMPANY_TBODY}         //*[@id="cmnl-items-list"]/tbody

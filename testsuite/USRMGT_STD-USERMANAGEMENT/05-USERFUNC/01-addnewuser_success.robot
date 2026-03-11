@@ -70,15 +70,26 @@ CASE-Add New Customer User Success
       commonkeywords.Wait Loading progress
       commonkeywords.Click Hide Search Criteria
       commonkeywords.Wait Loading progress
-
-      pageUserMgt.Verify User Result Datatable    1    name             contains      ${DS_USERPROFILE['adduserdata'][${usrdata_col.firstname}]}
-      pageUserMgt.Verify User Result Datatable    1    name             contains      ${DS_USERPROFILE['adduserdata'][${usrdata_col.lastname}]}
+      
+      ${expected_name}=     utils.Mask Custom Data    ${DS_USERPROFILE['adduserdata'][${usrdata_col.firstname}]}_${DS_USERPROFILE['adduserdata'][${usrdata_col.lastname}]}
+      pageUserMgt.Verify User Result Datatable    1    name             contains      ${expected_name}
       pageUserMgt.Verify User Result Datatable    1    username         should be     ${customer_username}
       pageUserMgt.Verify User Result Datatable    1    companyname      contains      ${customer_company}
       pageUserMgt.Verify User Result Datatable    1    group            should be     ${customer_group}       ignore_case=true
-      pageUserMgt.Verify User Result Datatable    1    email            should be     ${customer_useremail}
-      pageUserMgt.Verify User Result Datatable    1    approve          should be     Y
+      ${expected_email}=    utils.Mask Custom Data    ${customer_useremail}
+      pageUserMgt.Verify User Result Datatable    1    email            should be     ${expected_email}
+      #pageUserMgt.Verify User Result Datatable    1    approve          should be     Y --- ตอนนี้ไม่เจอ approve ใน datatable แล้ว
       pageUserMgt.Verify User Result Datatable    1    status           should be     ${USERSTATUS}[active]
+
+
+      # pageUserMgt.Verify User Result Datatable    1    name             contains      ${DS_USERPROFILE['adduserdata'][${usrdata_col.firstname}]}
+      # pageUserMgt.Verify User Result Datatable    1    name             contains      ${DS_USERPROFILE['adduserdata'][${usrdata_col.lastname}]}
+      # pageUserMgt.Verify User Result Datatable    1    username         should be     ${customer_username}
+      # pageUserMgt.Verify User Result Datatable    1    companyname      contains      ${customer_company}
+      # pageUserMgt.Verify User Result Datatable    1    group            should be     ${customer_group}       ignore_case=true
+      # pageUserMgt.Verify User Result Datatable    1    email            should be     ${customer_useremail}
+      # pageUserMgt.Verify User Result Datatable    1    approve          should be     Y
+      # pageUserMgt.Verify User Result Datatable    1    status           should be     ${USERSTATUS}[active]
 
       #verify use data info
       commonkeywords.Click button on list page      ${1ROW_USER_ACTION}[edit]
@@ -174,14 +185,25 @@ CASE-Add New Officer User Success
       commonkeywords.Click Hide Search Criteria
       commonkeywords.Wait Loading progress
 
-      pageUserMgt.Verify User Result Datatable    1    name             contains      ${DS_USERPROFILE['addofficeruser'][${usrdata_col.firstname}]}
-      pageUserMgt.Verify User Result Datatable    1    name             contains      ${DS_USERPROFILE['addofficeruser'][${usrdata_col.lastname}]}
+      ${expected_name_office}=     utils.Mask Custom Data    ${DS_USERPROFILE['addofficeruser'][${usrdata_col.firstname}]}_${DS_USERPROFILE['addofficeruser'][${usrdata_col.lastname}]}
+      pageUserMgt.Verify User Result Datatable    1    name             contains      ${expected_name_office}
       pageUserMgt.Verify User Result Datatable    1    username         should be     ${customer_username}
       pageUserMgt.Verify User Result Datatable    1    companyname      contains      ${customer_company}
-      pageUserMgt.Verify User Result Datatable    1    group            should be     ${customer_group}         ignore_case=true
-      pageUserMgt.Verify User Result Datatable    1    email            should be     ${customer_useremail}
-      pageUserMgt.Verify User Result Datatable    1    approve          should be     Y
+      pageUserMgt.Verify User Result Datatable    1    group            should be     ${customer_group}       ignore_case=true
+      ${expected_email_office}=    utils.Mask Custom Data    ${customer_useremail}
+      pageUserMgt.Verify User Result Datatable    1    email            should be     ${expected_email_office}
+      #pageUserMgt.Verify User Result Datatable    1    approve          should be     Y --- ตอนนี้ไม่เจอ approve ใน datatable แล้ว
       pageUserMgt.Verify User Result Datatable    1    status           should be     ${USERSTATUS}[active]
+
+
+      # pageUserMgt.Verify User Result Datatable    1    name             contains      ${DS_USERPROFILE['addofficeruser'][${usrdata_col.firstname}]}
+      # pageUserMgt.Verify User Result Datatable    1    name             contains      ${DS_USERPROFILE['addofficeruser'][${usrdata_col.lastname}]}
+      # pageUserMgt.Verify User Result Datatable    1    username         should be     ${customer_username}
+      # pageUserMgt.Verify User Result Datatable    1    companyname      contains      ${customer_company}
+      # pageUserMgt.Verify User Result Datatable    1    group            should be     ${customer_group}         ignore_case=true
+      # pageUserMgt.Verify User Result Datatable    1    email            should be     ${customer_useremail}
+      # pageUserMgt.Verify User Result Datatable    1    approve          should be     Y
+      # pageUserMgt.Verify User Result Datatable    1    status           should be     ${USERSTATUS}[active]
 
       #verify use data info
       commonkeywords.Click button on list page      ${1ROW_USER_ACTION}[edit]
