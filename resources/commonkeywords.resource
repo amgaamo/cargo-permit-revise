@@ -92,10 +92,10 @@ ${LOCATOR_NOTIFY_MSG}                 //div[@role="alertdialog"]
 
 &{submenu}        usermgt=css=a[title="User Management"]
 ...               groupMgt=css=a[title="Group Management"]
-...               companyMgt=css=a[title="Company Management"]
+...               companyMgt=//a[contains(@title, 'Company Management')]
 ...               permMgt=//a[contains(@title, 'Permission Management')]
-...               roleMgt=//a[contains(@title, 'Role Management')]
-...               menuMgt=//a[contains(@title, 'Menu Management')]
+...               roleMgt=css=a[title="Role Management"]
+...               menuMgt=css=a[title="Menu Management"]
 ...               ctypeMgt=//a[contains(@title, 'Company Type Management')]
 
 &{menuname}       usermgt=User Management

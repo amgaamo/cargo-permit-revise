@@ -55,6 +55,7 @@ CASE-Add New Customer User Success
       ...     phone=${DS_USERPROFILE['adduserdata'][${usrdata_col.phone}]}
       ...     email=${customer_useremail}
 
+
       commonkeywords.Click button on detail page    ${LOCATOR_USERSAVE_BTN}
       commonkeywords.Verify Modal Title message     Success
       commonkeywords.Click OK Button

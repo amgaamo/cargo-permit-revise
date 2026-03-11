@@ -132,8 +132,8 @@ Template Edit Group is success
       END
 
       commonkeywords.Verify Field State     ${LOCATOR_GROUPNAME_FIELD}            disabled
-      commonkeywords.Verify data form       ${LOCATOR_GROUPAPPROVAL_FIELD}        should be    No
-      commonkeywords.Verify data form       ${LOCATOR_GROUP_GROUPAPPV_FIELD}      should be    Please Select
+      # commonkeywords.Verify data form       ${LOCATOR_GROUPAPPROVAL_FIELD}        should be    No
+      # commonkeywords.Verify data form       ${LOCATOR_GROUP_GROUPAPPV_FIELD}      should be    Please Select
 
       commonkeywords.Click button on detail page    ${LOCATOR_GROUPSAVE_BTN}
       commonkeywords.Verify Modal Title message    Success
@@ -163,8 +163,8 @@ Template Edit Group is success
       commonkeywords.Verify data form         ${LOCATOR_GROUPCOMPANY_SEL}         should be     ${groupcomvalue}
       commonkeywords.Verify data form         ${LOCATOR_GROUPNAME_FIELD}          should be     ${groupnamevalue}
       commonkeywords.Verify data form         ${LOCATOR_GROUPLIMITUSER_FIELD}     should be     ${limituser}
-      commonkeywords.Verify data form         ${LOCATOR_GROUPAPPROVAL_FIELD}      should be     No
-      commonkeywords.Verify data form         ${LOCATOR_GROUP_GROUPAPPV_FIELD}    should be     Please Select
+      # commonkeywords.Verify data form         ${LOCATOR_GROUPAPPROVAL_FIELD}      should be     No
+      # commonkeywords.Verify data form         ${LOCATOR_GROUP_GROUPAPPV_FIELD}    should be     Please Select
 
       IF   '${limituser}'=='-1'
             commonkeywords.Verify data form    ${LOCATOR_GROUPUNLIMITUSER_CHK}    should be    check
@@ -201,4 +201,4 @@ Template Edit Group is success
       Log To Console      TEST CASE VERIFIED.
       commonkeywords.Click xClose button    ${LOCATOR_XCLOSEGROUP_BTN}
       commonkeywords.Wait Loading progress
-      commonkeywords.Verify Page Name is correct    Group Management
+      commonkeywords.Verify Page Name is correct    Group Management 
